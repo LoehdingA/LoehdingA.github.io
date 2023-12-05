@@ -48,4 +48,228 @@
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
 
+/* Imported Fonts */
 
+@font-face {
+    font-family: "ultra";
+    src: url("../fonts/serif/ultra-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/sans-serif/roboto-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "robotoslab";
+    src: url("../fonts/serif/robotoslab-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "opensans";
+    src: url("../fonts/sans-serif/opensans-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "rozhaone";
+    src: url("../fonts/serif/rozhaone-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "lato";
+    src: url("../fonts/sans-serif/lato-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Typography */
+
+p {
+    font-family: opensans, Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: robotoslab, Helvetica, sans-serif;
+    letter-spacing: 0.0325;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 0.45rem;
+    transform: rotate(-5deg);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.highlight {
+    display: inline-block;
+    font-family: ultra, Georgia, serif;
+    border: 1px solid black;
+    padding: 1rem 1.5rem;
+    border-radius: 0.3rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color:#A1BCC7;
+    background-color: #943333;
+    box-shadow: 5px 5px 4px -1px #8888;
+    
+}
+
+/* General Setup and Defaults */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:16px;
+}
+
+body {
+    margin: 1.5rem auto;
+    width:90%;
+    min-width:56.25rem;
+}
+
+/* Layout */
+
+header {
+    padding: 0.5rem 0rem 1rem 0rem;
+
+}
+
+nav {
+    margin-top: 3rem;
+}
+
+.main-section {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 1rem;
+}
+
+article {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+aside {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    border-left: 1px solid black;
+    padding-left: 1.5rem;
+    font-size: 15px;
+}
+
+aside p {
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+}
+
+.expand{
+    font-size: 0.25rem;
+    letter-spacing: 0.025rem;
+}
+
+.subsection {
+    display: flex;
+    padding-top: 3rem;
+}
+
+time {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+button {
+    border: 1px solid black;
+    background-color: #943333;
+    font-family: rozhaone;
+    font-size: 1.5rem;
+    color: #A1BCC7;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    box-shadow: 5px 5px 4px -1px #888;
+    text-shadow: -0.25px 0 #888, 0 1px black, 1px 0 black, 0 -1px black;
+    border-radius: .75rem;
+}
+
+.attribution {
+    float: right;
+    margin-bottom: 1.5rem;
+    font-size: 12px;
+}
+
+.copyright {
+    float:left;
+    margin-bottom: .75rem;
+    font-size: 12px;
+}
+
+/* Images and Figures */
+
+img {
+    width: 100%;
+}
+
+figure {
+    margin: 0px;
+}
+
+.article-image {
+    width: 33%;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.subsection {
+    margin: 1rem 0rem;
+}
+.subsection figure {
+    margin: 0rem 0.25rem;
+    background-color:#A1BCC7;
+    margin-bottom: 1rem;
+}
+
+.subsection figure figcaption {
+    padding: 0.5rem 0.5rem;
+}
+
+/* Links and Nav Menu */
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 1.25rem 2rem;
+    font-size: 1.5rem;
+    font-family: lato, Arial, sans-serif;
+    color:#4A6169
+}
+
+nav {
+    border-top: 1px solid #943333;
+    border-bottom: 1px solid #943333;
+}
+
+nav a:focus, nav a:hover {
+    color: white;
+    background-color: #943333;
+}
+
+nav a:active {
+    color : #fff;
+    background-color: #A1BCC7;
+}
